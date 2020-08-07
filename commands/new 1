@@ -1,0 +1,11 @@
+message.channel.send({embed: {
+  
+    title: 'Commands',
+    description: client.commands.map(c => {
+     if (c.help.name && c.help.inHelp) return c.help.name 
+
+    }).join('\n')
+  
+    }})
+  
+  }
